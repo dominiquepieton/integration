@@ -1,0 +1,245 @@
+/* ===============================
+   Colour Palette:
+   ---------------
+   Light Cream:	#f2f3ee
+   Orange:			#d17f38
+   Yellow:			#e8c04f
+   Brown:			#4b2707
+   =============================== */
+
+/* General */
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    background : #f2f3ee url('../images/bg-tile.gif') top left repeat; /* image de fond */
+    color : #4b2707;     /* couleur pour la police */
+    font-size: 14px;       /*  taille de la police  */
+    font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;              /* on met la taille du container  */
+    padding: 30px 24px;          /*   et on donne un margin auto */
+}
+
+/* Typography */
+
+h1, h2 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 44px;        /* hauteur du texte dans un bloc */
+    color: #d17f38;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    background: url('../images/header-divider.png') bottom center no-repeat; /* image situé en bas centré pas repeté  */
+    padding: 0 0 20px;  /* top right bottom left */           
+}
+
+h1 em {
+    color: #4b2707;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    margin: 0;
+}
+
+p.lead {
+    font-size: 30px;
+    font-weight: 300;    /* taille de police et degres du gras et align text */
+    text-align: center;
+    margin: 10px 0;
+}
+
+p {
+    margin: 0;
+}
+
+a:link, a:visited {
+    color: #d17f38;
+}
+
+a:hover {
+    color: #4b2707;
+}
+
+hr {
+    border: none;
+    height: 33px;       /* on remplace le hr par une image taille image centrer et margin de 30px*/
+    width: 350px;
+    margin: 30px auto;
+    background: url('../images/divider.png') center center no-repeat;
+}
+
+/* Header */
+
+header nav { 
+    text-align: center;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;       /*  enleve les puces de liste */
+    display: inline-block;    /* on aligne le block  */
+    line-height: 150px;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header nav ul li a {
+    text-transform: uppercase;   /* agrandit le texte */
+    text-decoration: none;      /* on enleve le  decoration lien */
+    font-weight: bold;      /* texte en gras */
+}
+
+header nav ul li a:hover {
+    background: url('../images/tiny-donut.png') top center no-repeat;
+    padding-top: 20px;
+    color: #4b2707;
+}
+
+header nav ul li#logo a {
+    display: block;     /* on met en block */
+    width: 290px;       /* taille image  */
+    height: 140px;
+    background: url('../images/logo.png') center center no-repeat;
+    text-indent: -9999px    /* cache le texte */
+}
+
+header nav ul li#logo a:hover {
+    background: url('../images/logo-hover.png') center center no-repeat;
+    padding:  0;
+}
+
+/* Hero */
+
+#hero {
+    background: #e8c04f  url('../images/bg-tile-yellow.gif') top left no-repeat;
+}
+
+#hero .container {
+   position: relative;
+}
+
+#hero .large-ribbon {
+    height: 190px;      /* taille image */ 
+    width: 150px;
+    background: url('../images/fresh-whole-ingredients.png') top left no-repeat;
+    text-indent: -9999px;        /* enleve le texte */
+    position: absolute;     /* type de position */
+    top: -23px;           /* on le positionne avec top et right */
+    right: -30px;
+}
+
+/* The Whole Story */
+
+#story-excerpt {
+    float: left;
+    width: 530px;   /* largeur du texte */
+    margin-right: 24px;
+    font-size: 16px;
+}
+
+#best-donut {
+    background: url('../images/award.png') left center no-repeat;
+    padding: 30px 0 30px 130px;  /* position du texte et image */
+    width: 240px;
+    float: left;
+}
+
+/* News & Events */
+
+#articles {
+    width: 370px;
+    float: left;
+    margin-right: 24px;
+}
+
+#feature-image {
+    width: 530px;
+    float: left;
+}
+
+#news-events article {
+    margin: 20px 0;
+    padding-left: 55px;
+}
+
+#news-events article.news {
+    background: url('../images/icon-news.png') top left no-repeat;
+}
+
+#news-events article.event {
+    background: url('../images/icon-calendar.png') top left no-repeat;
+}
+
+#news-events header time {
+    color: #d17f38;
+    font-size: 12px;
+}
+
+#news-events section.excerpt {
+    margin: 10px 0;
+}
+
+#news-events footer {
+    font-size: 12px;
+}
+
+
+/* Footer */
+
+footer.main {
+    background: #4b2707 url('../images/bg-tile-brown.gif') top left repeat;
+    color: #f2f3ee;
+    padding: 30px 0;          /* padding top et bottom 30 droite gauche 0  */
+}
+
+footer.main a:hover {
+    color: #f2f3ee;
+}
+
+#uncopyright, #credits {
+    width: 240px;
+    float: left;
+    padding: 10px 0 10px 50px;
+}
+
+#uncopyright {
+    background: url('../images/icon-recycle.png') center left no-repeat;
+}
+
+#credits {
+    background: url('../images/icon-apple.png') center left no-repeat;
+    float: right;
+    margin-top: 5px;
+}
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display:block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+

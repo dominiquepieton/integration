@@ -1,0 +1,178 @@
+/*typo */
+
+h1{
+    font-size: 52px;
+}
+
+h3{
+    font-size: 28px;
+}
+
+nav {
+background-color: #A6A6A6;
+    height:61px;
+    width:900px; 
+    text-align: center;
+    border : 0 5px 0 5px solid;
+    border-color: black;
+    margin-bottom : 25px;
+    margin-right: 47px;
+    margin-left: 30px;
+}
+
+body{
+    background-image: url(elements/bg.png);
+}
+
+.container{
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    font-size:13px;
+  font-weight: 400;
+    width:994px;
+    background-color: white;
+    margin: 0 auto;
+    align-content: center;
+    box-shadow: 0 3px 4px grey, inset 0 0 4px grey;
+    padding-left: 47px;
+}
+
+.title{
+    padding-top:20px;
+    margin-left: 30px;
+}
+
+.soustitle{
+    position:absolute;
+    top:130px;
+    left:490px;
+    margin-top: 20px;
+    margin-left: 30px;
+ 
+}
+
+.loupe{
+    position: absolute;
+    right:600px;
+    top: 100px;
+}
+
+.taille{
+    width:34px;
+    height:22px;   
+}
+     /*      menu deroulant  */ 
+menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+#menu-deroulant {
+/* on centre le menu dans la page */
+    text-align: center;
+    padding:20px;
+}
+#menu-deroulant li {
+/* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+/* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+    background-color: #A6A6A6;
+	color:#000;
+    font-size: 13px;
+    width: 120px;
+    height: 34px;
+    line-height: 30px;
+    padding : 3px 10px;
+    text-align: center;   
+}
+
+#menu-deroulant a:hover{
+    color:white;
+}
+#menu-deroulant ul {
+    position: absolute;
+/* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul {
+/* Au survol des li du menu on replace les sous menus */
+    left: auto;
+}
+
+.photo{
+    width: 900px;
+    height: 508;
+    text-align: center;
+    margin-top: 40px;
+    margin-right: 47px;
+    margin-left: 30px;
+}
+
+.nuages{
+    text-align:center;
+}
+
+.nuages1{
+    margin-top:-20px;
+}
+
+.aticles{
+    width:900px;
+    margin-left:30px;
+    margin-right:40px;
+}
+
+.lorem{
+    text-align : "." center;
+    margin-left: 30px;
+}
+
+.barre{
+    width:900px;
+    height:40px;
+    border-style: solid;
+    border-color: black;
+    border-top: 5px;
+    border-bottom: 5px;
+    background-image: url(elements/bg.png);
+    margin-left: 30px;
+}
+
+.titlefooter{
+    margin:35px 0px 35px 0px;
+    text-align: center;
+}
+
+.articles1{
+    background-image: url(elements/bg.png);
+    display:inline-flex;
+    border-top-style: 5px solid ;
+    width :900px;
+    height:235px;
+    
+    margin-left: 30px;
+}
+
+.a1 ul{
+    width:200px;
+    height:235px;
+    list-style: none;
+}
+.a1 li{
+    line-height: 25px;
+}
+
+.footh3{
+    font-size: 14px;
+    align-content: flex-start;
+    text-align: center;
+}

@@ -1,0 +1,110 @@
+
+   /* typo    */ 
+h1{
+	font-size: 133px;
+	text-align: center;
+}
+
+h3{
+	font-size: 18px;
+	color: black;
+}
+
+	/* fond de page */
+
+body{
+	background-image: url('images/bg.jpg');
+	background-size: cover;
+}
+
+.container{
+	background-color: white;
+	width: 1020px;
+	margin-left: 430px;
+	margin-top: -15px;
+	font-family : 'Bitter';
+	color: #7a7a7a;
+}
+
+		/*  navigation et header  */
+header{
+	background-color: black;
+	color : #cfa205;
+}
+
+header nav{
+	text-align: center;
+	height: 60px;
+}
+
+header nav ul{
+	list-style: none;	
+}
+
+header nav ul li{
+	display: inline-flex;
+	text-align: center;
+}
+
+header nav ul li a{
+	font-weight: bold;
+	padding: 20px;
+	text-decoration: none;
+	color:#7a7a7a;
+
+}
+
+header nav ul li a:hover{
+	color :white;
+}	
+
+.title{
+	height: 320px;
+	margin:0;
+
+}
+
+.h3{
+	color: #cfa205;
+	text-align: center;
+}
+i{
+	color:black;
+}
+.sociaux{
+	text-align: center;
+	background-color: grey;
+	height:60px;
+	padding-top: 20px;
+
+}
+
+.text{
+	text-align : center;
+	font-weight: bold;
+	margin: 60px;
+	width : 900px;
+	height : 90px;
+}
+
+hr{
+	width: 900px;
+}
+
+.article{
+	display: inline-flex;
+		align-content: center;
+	margin-top: 50px;
+	width : 900px;
+}
+
+.card{
+	width: 260px;
+	height: 675px;
+	padding : 40px;
+}
+
+.body{
+	text-align : center justify;
+	font-size: 14px;
+}
